@@ -1,0 +1,37 @@
+# Test API endpoints for Rate Limiter
+
+### Health Check Endpoint
+GET http://localhost:8080/health
+
+### Single Request (Should succeed if under limit)
+GET http://localhost:8080/api/
+
+### Test Multiple Requests by IP
+GET http://localhost:8080/api/test
+
+### Request with Token (Higher limit)
+GET http://localhost:8080/api/test
+API_KEY: token123
+
+### Rapid Fire Requests (for load testing)
+GET http://localhost:8080/api/test
+
+###
+GET http://localhost:8080/api/test
+
+###
+GET http://localhost:8080/api/test
+
+###
+GET http://localhost:8080/api/test
+
+###
+GET http://localhost:8080/api/test
+
+### Test with different IPs (using X-Forwarded-For)
+GET http://localhost:8080/api/test
+X-Forwarded-For: 10.0.0.1
+
+### Test with Premium Token
+GET http://localhost:8080/api/test
+API_KEY: premium-token
