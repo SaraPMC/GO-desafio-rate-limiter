@@ -3,8 +3,8 @@ module github.com/SaraPMC/GO-desafio-rate-limiter
 go 1.21
 
 require (
-	github.com/redis/go-redis/v9 v9.0.5
 	github.com/joho/godotenv v1.5.1
+	github.com/redis/go-redis/v9 v9.0.5
 )
 
 require (
