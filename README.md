@@ -426,31 +426,6 @@ rl.ConfigureToken("api-key-hourly", 10000, 3600)
 
 ---
 
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Por favor:
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
----
-
 ## 📝 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido como desafio prático de implementação de padrões Go avançados.
-
-**Status:** ✅ Production Ready
-
----
-
-**Última atualização:** 2024-01-02
-**Versão:** 1.0.0
