@@ -3,18 +3,17 @@ package limiter
 import (
 	"context"
 	"fmt"
-	"time"
 
-	"github.com/seu-usuario/desafio-rate-limiter/internal/strategy"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/strategy"
 )
 
 // RateLimiter handles the rate limiting logic separated from middleware
 type RateLimiter struct {
-	storage               strategy.StorageStrategy
-	defaultLimit          int
-	defaultBlockDuration  int
-	tokenLimits           map[string]int
-	tokenBlockDurations   map[string]int
+	storage              strategy.StorageStrategy
+	defaultLimit         int
+	defaultBlockDuration int
+	tokenLimits          map[string]int
+	tokenBlockDurations  map[string]int
 }
 
 // NewRateLimiter creates a new rate limiter instance

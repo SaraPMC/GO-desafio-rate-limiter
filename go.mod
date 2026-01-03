@@ -1,4 +1,4 @@
-module github.com/seu-usuario/desafio-rate-limiter
+module github.com/SaraPMC/GO-desafio-rate-limiter
 
 go 1.21
 

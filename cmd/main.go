@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/seu-usuario/desafio-rate-limiter/internal/config"
-	"github.com/seu-usuario/desafio-rate-limiter/internal/limiter"
-	"github.com/seu-usuario/desafio-rate-limiter/internal/middleware"
-	"github.com/seu-usuario/desafio-rate-limiter/internal/strategy"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/config"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/limiter"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/middleware"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/strategy"
 )
 
 type Response struct {
@@ -111,8 +111,8 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 
 	response := Response{
-		Message:   "Request accepted! Rate limiter working correctly.",
-		Time:      time.Now().Format(time.RFC3339),
+		Message: "Request accepted! Rate limiter working correctly.",
+		Time:    time.Now().Format(time.RFC3339),
 	}
 
 	json.NewEncoder(w).Encode(response)

@@ -3,9 +3,6 @@ package limiter
 import (
 	"context"
 	"testing"
-	"time"
-
-	"github.com/seu-usuario/desafio-rate-limiter/internal/strategy"
 )
 
 // MockStorage is a mock implementation of StorageStrategy for testing

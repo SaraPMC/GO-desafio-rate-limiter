@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/seu-usuario/desafio-rate-limiter/internal/limiter"
+	"github.com/SaraPMC/GO-desafio-rate-limiter/internal/limiter"
 )
 
 // RateLimiterMiddleware returns a middleware function for rate limiting
